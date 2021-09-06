@@ -1,3 +1,22 @@
 1- scann the UI 
-2-define your components 
-3-built UI with a static data
+2-define your components   
+
+3-built UI with a static data:
+import the search component and the list compont in the app.js
+a-pass the props to the list component 
+b-map the table and display a card component for each element of the table 
+c-pass the element as props to the card component
+d-use the card component to display the data in the UI as you wish 
+e-go wild with the design 
+
+
+///Search feature :
+1-cretae a state search (a variable in witch we'll store the input of the user )
+const [getter, setter]=useState( initialState)
+ getter: the last updated value 
+ setter: the function that will handel the update 
+
+2- send the setter to the search component to store the input of the user 
+3- store the input of the user in the search cmp using the setter, onChange event ant the event trigger (e.target.value)
+4-send the getter to th movie list as props to filter the list of movies 
+5-use filter, includes(test id the string includes another string ) , tolowercase trim(eliminate the space of the string at the beg and at the end )
